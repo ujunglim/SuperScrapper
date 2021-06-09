@@ -13,10 +13,17 @@ https://replit.com/@yujungjung1/SuperScrapper#main.py
 - [x] Export to CSV
 
 ---
-Install Package 
-- Flask
-- Requests
-- beatuifulSoup4
+Imported Packages 
+- Requests: Get HTML from URL by python
+- beatuifulSoup4: Extract data from HTML
+- Flask: micro-framework of Web Server
+
+VSC 
+```
+python -m pip install requests
+pip install beautifulsoup4
+pip install Flask
+```
 
 ```python
 import requests
