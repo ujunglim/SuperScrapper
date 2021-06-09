@@ -1,0 +1,59 @@
+section {
+  display : grid;
+  gap : 20px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left:10rem;
+  margin-top: 5rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-shadow: 2px 2px #5854545d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  content: "Background image from Unsplash";
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7rem;
+  z-index: 2;
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://source.unsplash.com/1600x900/?programming");
+}
+
+input {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  height: 30px;
+  width: 250px;
+  padding-left:20px;
+  border: 0px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+a {
+  color: rgb(248, 84, 84);
+  text-shadow: 2px 2px #5854545d;
+}
